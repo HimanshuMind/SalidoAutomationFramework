@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SALIDO Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="mind.salido.ExtentReport.ExtentReportListner" />
+	</listeners>
+
+
+	<test name="Free CRM App Test Cases">
+		<classes>
+			<class name="mind.salido.pos.testcases.LoginPageTest"></class>
+			
+
+		</classes>
+	</test>
+</suite>
+
+

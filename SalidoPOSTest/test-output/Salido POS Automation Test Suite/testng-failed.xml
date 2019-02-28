@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Salido POS Automation Test Suite]">
+  <test name="SALIDO POS App ios Test Cases(failed)">
+    <classes>
+      <class name="mind.salido.pos.testcases.LoginPageTest">
+        <methods>
+          <include name="Launched"/>
+          <include name="close"/>
+          <include name="FirstScenario"/>
+        </methods>
+      </class> <!-- mind.salido.pos.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- SALIDO POS App ios Test Cases(failed) -->
+</suite> <!-- Failed suite [Salido POS Automation Test Suite] -->
