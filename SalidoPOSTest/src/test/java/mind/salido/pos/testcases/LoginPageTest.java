@@ -1,5 +1,8 @@
 package mind.salido.pos.testcases;
 
+import java.net.MalformedURLException;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,22 +14,24 @@ public class LoginPageTest extends TestBase{
 	
 	LoginPage login;
 	
-	public LoginPageTest()       // constructor 
-	{
-		super();              //   to initialized  superclass (TestBase) constructor we user super keyword to initialized the property method.
-	}
-
+       public LoginPageTest()
+         {
+	super();
+        	}
+	
 	
 	@BeforeMethod
-	public void Launched()
+	public void Launched() throws MalformedURLException, InterruptedException
 	{
-		BrowserInitalization();
+		//BrowserInitalization();
+		
+		AppiumInitalization();
 	   login = new LoginPage();
 	}
 	
 	
 	
-	@Test
+	@Test (enabled = false)
 	public void FirstScenario() 
 	{
 		
@@ -36,6 +41,29 @@ public class LoginPageTest extends TestBase{
 		
 	}
 	
+	
+	@Test
+	public void AppiumScenarios ()
+	{
+	
+	try {
+		login.AppiumCheckScenario();
+	} catch (MalformedURLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	try {
+		login.secondmethos();
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+	
+				 
 	
 	
 	

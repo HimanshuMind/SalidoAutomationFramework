@@ -7,7 +7,7 @@
         <methods>
           <include name="Launched"/>
           <include name="close"/>
-          <include name="FirstScenario"/>
+          <include name="AppiumScenarios"/>
         </methods>
       </class> <!-- mind.salido.pos.testcases.LoginPageTest -->
     </classes>
